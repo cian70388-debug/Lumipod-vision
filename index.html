@@ -1,40 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LumiPod Vision</title>
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <meta name="theme-color" content="#0f172a" />
-    <link rel="icon" href="./icons/icon-192.png" />
-    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>LumiPad</title>
   </head>
-  <body>
-    <main class="container">
-      <header>
-        <h1>LumiPod Vision</h1>
-        <p class="tag">One‑click static PWA (no build step)</p>
-      </header>
-
-      <section class="card">
-        <div id="glowme" class="glow">
-          <div class="orb"></div>
-        </div>
-        <div class="controls">
-          <button id="feed">Feed</button>
-          <button id="play">Play</button>
-          <button id="rest">Rest</button>
-        </div>
-        <p id="status" class="status">Ready.</p>
-      </section>
-
-      <section class="card">
-        <h2>Install</h2>
-        <p>This app is installable. Use your browser menu &rarr; <b>Add to Home screen</b>.</p>
-      </section>
-    </main>
-
-    <script src="./js/app.js" type="module"></script>
+  <body class="bg-slate-900 text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
